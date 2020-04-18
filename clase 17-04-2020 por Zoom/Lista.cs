@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Created by SharpDevelop.
  * User: Eber
  * Date: 17/4/2020
@@ -55,15 +55,6 @@ namespace Tarea
 			for(int i=0; i<nroEstudiantes;i++){
 				Console.WriteLine(nombresEst[i] +" -> " + puntajesEst[i]);
 			}
-		}
-		public static int operator ~(Lista lis)
-        {
-			int p = 0;
-			for(int i=0; i<lis.nroEstudiantes;i++){
-				p+= lis.puntajesEst[i];
-			}
-			p/= lis.nroEstudiantes;
-			return p;
 		}
 		public static Lista operator +(Lista lis, Lista lis2){
 			Lista lisRes;
