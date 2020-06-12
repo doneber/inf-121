@@ -6,6 +6,7 @@ namespace Ejercicio_POO
     {
         private int n;
         private bool[] c=new bool[101];
+	// Constructor para generar datos aleatorios por defecto
         public ConjuntoEntero(){
             n=100;
             Random random = new Random();  
@@ -13,6 +14,8 @@ namespace Ejercicio_POO
                 c[i]=false;
             }
         }
+	    
+	// Constructor para llenar k elementos en true 
         public ConjuntoEntero(int k){
             n=100;
             Random random = new Random();  
@@ -23,6 +26,7 @@ namespace Ejercicio_POO
                 c[random.Next(101)]=true;
             }
         }
+	// Sobrecargamos el operador '+' para hacer lo que en Teoria de Conjutos se llama la "Unioin"
         public static ConjuntoEntero operator +(ConjuntoEntero conj, ConjuntoEntero conj2){
 			ConjuntoEntero conjRes=new ConjuntoEntero();
             for(int i=0; i<101; i++){
@@ -31,6 +35,7 @@ namespace Ejercicio_POO
             }
 			return conjRes;
 		}
+	//Metodo mostrar que no devuelve nada
         public void mostrar(){
             Console.WriteLine("n: "+n);
             for(int i=0; i<101; i++)
@@ -38,6 +43,7 @@ namespace Ejercicio_POO
                     Console.Write(i+"\t");
             Console.WriteLine();
         }
+	//Método mostrar que devuelve un string, sobrecargado solo para cumplir con el enunciado (el parametro no importa que le envies)
         public string mostrar(string s){
             String res = "";
             for(int i=0; i<101; i++)
@@ -49,6 +55,7 @@ namespace Ejercicio_POO
             else
                 return "--";
         }
+	// Elimina pero verificamos que este en el rango de nuestro vector
         public void eliminarElemento(int x){
             if(x>= 0 && x <=100){
                 c[x]=false;
@@ -58,6 +65,8 @@ namespace Ejercicio_POO
 
             }
         }
+	    
+	// Getters y setters
         public int N {
 			get { return n; }
 			set { n = value; }
