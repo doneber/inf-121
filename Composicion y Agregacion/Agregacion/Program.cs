@@ -1,4 +1,5 @@
-﻿using System;
+  
+using System;
 
 namespace Agregacion
 {
@@ -18,7 +19,11 @@ namespace Agregacion
             
             r.adicionarAlimento(a1);
             r.mostrar();
+            Console.WriteLine("**********************");
+            Console.WriteLine("Buscando 'banaa':");
+            r.mostrarAlimento("banaa");
+            Console.WriteLine("Buscando 'Leche':");
+            r.mostrarAlimento("Leche");
         }
     }
 }
-
