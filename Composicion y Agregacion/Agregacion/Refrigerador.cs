@@ -24,6 +24,12 @@ namespace Agregacion
                 alimentos[i].mostrar();
             }
         }
+        public void mostrarAlimento(string x){
+          for(int i = 0 ; i < cantAlimentos; i++){
+            if (alimentos[i].nombre == x){
+              alimentos[i].mostrar();
+            }
+          }
+        }
     }
 }
-
