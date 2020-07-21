@@ -1,0 +1,5 @@
+C:\Users\Eber\Documents\SharpDevelop Projects\examenPersistencia\examenPersistencia\obj\x86\Debug\examenPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\Eber\Documents\SharpDevelop Projects\examenPersistencia\examenPersistencia\bin\Debug\examenPersistencia.exe
+C:\Users\Eber\Documents\SharpDevelop Projects\examenPersistencia\examenPersistencia\bin\Debug\examenPersistencia.pdb
+C:\Users\Eber\Documents\SharpDevelop Projects\examenPersistencia\examenPersistencia\obj\x86\Debug\examenPersistencia.exe
+C:\Users\Eber\Documents\SharpDevelop Projects\examenPersistencia\examenPersistencia\obj\x86\Debug\examenPersistencia.pdb
